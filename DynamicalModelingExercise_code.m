@@ -87,7 +87,7 @@ out_model=pem(out_iddata',[pC_struct pB_struct])
 
 %%% Use the estimated P_a, P_b, and P_c' expressions in a simulation of how the mediator and outcome respond to X(t), as captured in the estimated ODEs
 
-sim('DynamicalMediationModel_SimB',[],options);         % Runs the simulation, where "new_out_sim" is the name of a simulation file
+sim('DynamicalMediationModel_Sim',[],options);         % Runs the simulation, where "new_out_sim" is the name of a simulation file
 med_sim = med_response_sim.signals.values;                     % The simulated data for M(t) responding to the defined change in X(t) according ot the model
 out_sim = out_response_sim.signals.values;                 % The simulated data for Y(t) responding to the defined change in X(t) through the mediated and non-mediated paths, according to the model
 
